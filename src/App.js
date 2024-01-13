@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import Data from "./flights.csv";
+import FlightsInfo from "./components/FlightsInfo";
 import Papa from "papaparse";
 
 function App() {
@@ -25,7 +26,26 @@ function App() {
   return (
     <div className="App">
       <h1>Your Flights</h1>
-      {JSON.stringify(data)}
+      <table>
+        <thead>
+          <tr>
+            <th>From</th>
+            <th>To</th>
+            <th>Flight Number</th>
+            <th>Departs</th>
+            <th>Arrives</th>
+            <th>Main Cabin Price</th>
+            <th>First Class Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          {data.map((flightData, index) => (
+            <FlightsInfo key={index}
+              flight={flightData}
+            />
+          ))}
+        </tbody>
+      </table>
     </div>
   );
 }
