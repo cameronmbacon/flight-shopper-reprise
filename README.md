@@ -2,6 +2,8 @@
 
 Check out this project on Github Pages! [Flight Shopper Reprise](https://cameronmbacon.github.io/flight-shopper-reprise/index.html).
 
+<a href="https://cameronmbacon.github.io/flight-shopper-reprise/index.html" target="_blank">Flight Shopper Reprise</a>
+
 ## Synopsis:
 
 7 years ago, I completed the Code Fellows program for Full Stack Application Development with Node.js. The main framework knowledge I walked away with was Node.js for back-end and Angular.js for front-end. Shortly after completing the program, I began applying for interviews with various companies that partnered with Code Fellows. I finally received an interview opportunity from a reputable airline company which also came with a coding challenge.  
