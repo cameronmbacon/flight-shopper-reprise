@@ -1,13 +1,13 @@
 const FlightsInfo = ({flight}) => {
     return (
-        <tr className="table-row even:bg-gray-100">
-            <td>{flight.From}</td>
-            <td>{flight.To}</td>
-            <td>{flight.FlightNumber}</td>
-            <td>{flight.Departs}</td>
-            <td>{flight.Arrives}</td>
-            <td>${flight.MainCabinPrice}.00</td>
-            <td>${flight.FirstClassPrice}.00</td>
+        <tr className="pl-4 even:bg-gray-100 flex flex-row text-left">
+            <td className="w-full">{flight.From}</td>
+            <td className="w-full">{flight.To}</td>
+            <td className="w-full">{flight.FlightNumber}</td>
+            <td className="w-full">{flight.Departs}</td>
+            <td className="w-full">{flight.Arrives}</td>
+            <td className="w-full">${flight.MainCabinPrice}.00</td>
+            <td className="w-full">${flight.FirstClassPrice}.00</td>
         </tr>
     )
 }

@@ -3,19 +3,28 @@ import { BiSolidPlaneAlt } from "react-icons/bi";
 import Data from "./flights.csv";
 import FlightsInfo from "./components/FlightsInfo";
 import SearchFlights from "./components/SearchFlights";
+import SortableHeader from "./components/SortableHeader";
 import Papa from "papaparse";
 
 function App() {
-
   const [data, setData] = useState([]);
   const [origin, setOrigin] = useState("");
   const [destination, setDestination] = useState("");
+  const [sortBy, setSortBy] = useState("Depart");
+  const [orderBy, setOrderBy] = useState("asc");
+  const flightHeaders = ["From", "To", "FlightNumber", "Departs", "Arrives", "MainCabinPrice", "FirstCabinPrice"];
+
   const filteredFlights = data.filter(item => {
       return (
         item.To.includes(destination) && item.From.includes(origin)
       )
     }
-  )
+  ).sort((a, b) => {
+    let order = (orderBy === "asc") ? 1 : -1;
+    return (
+      a[sortBy] < b[sortBy] ? -1 * order : 1 * order
+    )
+  })
 
   useEffect(() => {
     const fetchData = async () => {
@@ -42,25 +51,22 @@ function App() {
           setDestination(destination);
           }}
         onDestinationChange={destination => setDestination(destination)} />
-      <table className="table-auto text-center">
-        <thead className="table-header-group bg-blue-400 border-2">
-          <tr className="table-row">
-            <th className="px-5 py-2">From</th>
-            <th className="px-5 py-2">To</th>
-            <th className="px-5 py-2">Flight Number</th>
-            <th className="px-5 py-2">Departs</th>
-            <th className="px-5 py-2">Arrives</th>
-            <th className="px-5 py-2">Main Cabin Price</th>
-            <th className="px-5 py-2">First Class Price</th>
+      <table className="table-auto text-center min-w-fit">
+        <thead className="table-header-group bg-green-400 border-2 flex-nowrap">
+          <tr className="flex flex-row flex-nowrap items-center justify-center">
+            {
+              flightHeaders.map((header, index) => {
+                return <SortableHeader key={index}
+                flightHeader={header}
+                orderBy={orderBy}
+                setOrderBy={setOrderBy}
+                setSortBy={setSortBy} />
+              })
+            }
           </tr>
         </thead>
         <tbody>
           {
-            origin === "" && destination === "" ? data.map((flightData, index) => (
-              <FlightsInfo key={index}
-                flight={flightData}
-              />
-            )) : 
             filteredFlights.map((flightData, index) => (
               <FlightsInfo key={index}
                 flight={flightData}
