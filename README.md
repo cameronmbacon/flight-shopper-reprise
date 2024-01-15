@@ -1,6 +1,6 @@
 # Flight Shopper Reprise
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Check out this project on Github Pages! [Flight Shopper Reprise](https://cameronmbacon.github.io/flight-shopper-reprise/index.html).
 
 ## Synopsis:
 
