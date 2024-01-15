@@ -1,8 +1,8 @@
 const FlightsInfo = ({flight}) => {
     return (
         <tr className="table-row even:bg-gray-100">
-            <td>{flight.To}</td>
             <td>{flight.From}</td>
+            <td>{flight.To}</td>
             <td>{flight.FlightNumber}</td>
             <td>{flight.Departs}</td>
             <td>{flight.Arrives}</td>
