@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/flight-shopper-reprise/static/css/main.ccdb6ba8.css",
+    "main.js": "/flight-shopper-reprise/static/js/main.c7300013.js",
+    "static/media/flights.csv": "/flight-shopper-reprise/static/media/flights.45ecb213048afb573deb.csv",
+    "index.html": "/flight-shopper-reprise/index.html",
+    "static/media/airports.csv": "/flight-shopper-reprise/static/media/airports.913387a46a24c723b65f.csv",
+    "main.ccdb6ba8.css.map": "/flight-shopper-reprise/static/css/main.ccdb6ba8.css.map",
+    "main.c7300013.js.map": "/flight-shopper-reprise/static/js/main.c7300013.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ccdb6ba8.css",
+    "static/js/main.c7300013.js"
+  ]
+}
