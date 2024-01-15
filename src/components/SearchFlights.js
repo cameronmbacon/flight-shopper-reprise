@@ -27,7 +27,7 @@ function SearchFlights({ onQueryChange }) {
         <div>
           <div>
             <label htmlFor="selectedOrigin">From: </label>
-            <select name="selectedOrigin" defaultValue={""} onChange={(e) => setOrigin(e.target.value)}>
+            <select id="selectedOrigin" onChange={(e) => setOrigin(e.target.value)}>
                 {data.map((airportData, index) =>
                     <option key={index} value={airportData.Code}>{airportData.Name}</option>
                 )}
@@ -35,14 +35,16 @@ function SearchFlights({ onQueryChange }) {
           </div>
           <div>
             <label htmlFor="selectedDestination">To: </label>
-            <select name="selectedDestination" defaultValue={""} onChange={(e) => setDestination(e.target.value)}>
+            <select id="selectedDestination" onChange={(e) => setDestination(e.target.value)}>
                 {data.map((airportData, index) =>
                     <option key={index} value={airportData.Code}>{airportData.Name}</option>
                 )}
             </select>
           </div>
-          <button onClick={() => onQueryChange(origin, destination)}>Search Flights</button>
-          <button onClick={() => onQueryChange("", "")}>Show All Flights</button>
+          <button className="bg-blue-400 mr-2"
+            onClick={() => onQueryChange(origin, destination)}>Search Flights</button>
+          <button className="bg-blue-300"
+            onClick={() => onQueryChange("", "")}>Show All Flights</button>
         </div>
     )
 }

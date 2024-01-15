@@ -1,70 +1,12 @@
-# Getting Started with Create React App
+# Flight Shopper Reprise
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Synopsis:
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+7 years ago, I completed the Code Fellows program for Full Stack Application Development with Node.js. The main framework knowledge I walked away with was Node.js for back-end and Angular.js for front-end. Shortly after completing the program, I began applying for interviews with various companies that partnered with Code Fellows. I finally received an interview opportunity from a reputable airline company which also came with a coding challenge.  
+The challenge was actually rather simple: receive two .csv files with airport and flight data, then present the information for the user. The flight information needed to be sortable and filterable based on origin and destination.  
+Ultimately, I failed this simple coding challenge due a number of factors that were in my control. I could not find a way to convert the csv data to JSON programatically while creating a solution that only utilized the front-end. Creating a full-stack solution to conver the csv data server-side seemed like overkill (and also proved difficult at the time when I finally resorted to this). I found a inegratable solution written in C# that utilized the .NET framework. I had no prior .NET experience, but thought learning the framework for this challenge would show some type of vigor. However, I was not able to create an elegant solution to the problem in time.  
+I had several simultanous events in my life that required my attention and that made me feel like continuing my software journey remotely to stay close to my responsibilities was the only option. I should have better utilized my resources and support team to help create a solution that would have been a better represenation of my capabilities.  
+With all of that said, We live and we learn, and most importantly: we keep pressing forward. I found a home for my tech affinity in IT Support. I completed my B.S. in Information Technology from ASU in 2021 and am currently on one of the corporate on-premise support teams for Amazon. They have provided me the opprtunity to join a Java Development program this year and I could not be more excited! I learned Java at ASU and have been eager to dive into the Spring ecosystem. As a first step, I am brushing up on my front-end skills so that I can ultimately connect my Spring projects to a React front-end.  
+The skills I gained from Code Fellows and ASU have allowed me to learn the React framework with ease. I also kind of want to kick my former self for not kearning React sooner, but we live and we learn. Coming back to properly complete this coding challenge seemed like a great way to pick up where I left off 7 years ago. Here we go!
