@@ -1,6 +1,6 @@
 # Flight Shopper Reprise
 
-Check out this project on Github Pages! [Flight Shopper Reprise](https://cameronmbacon.github.io/flight-shopper-reprise/index.html).
+Check out this project on Github Pages! [Flight Shopper Reprise](https://cameronmbacon.github.io/flight-shopper-reprise/index.html){:target="_blank"}.
 
 <a href="https://cameronmbacon.github.io/flight-shopper-reprise/index.html" target="_blank">Flight Shopper Reprise</a>
 
